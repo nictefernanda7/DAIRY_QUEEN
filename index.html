@@ -21,6 +21,9 @@
 body {
 	background-color: #E6F2F2;
 }
+html {
+	scroll-behavior:smooth;
+}
 .NICTEB {
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 	font-size: 24px;
@@ -79,6 +82,17 @@ body {
 	width: 100%;
 	left: 0px;
 }
+.hover-sombra {
+ text-decoration:none;
+ color: #458989;
+ transition: all 0.3s ease;
+ text-shadow: 0 0 0px rgba(0,0,0,0);
+}
+.hover-sombra:hover {
+ color: #E6F2F2;
+ text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+ transform: translateY(-2px);
+}
 </style>
 </head>
 
@@ -87,18 +101,18 @@ body {
   <div align="center">
     <table width="80%" border="0">
       <tr>
-        <td><div align="left"><img src="DQ IMAGEN LOGO.png" height="90"></div></td>
-        <td><div align="center">MENÚ</div></td>
-        <td><div align="center">PROMOCIONES</div></td>
-        <td><div align="center">UBICACIÓN Y CONTACTO</div></td>
+        <td><div align="left"><a href="#inicio"><img src="DQ IMAGEN LOGO.png" height="90"></a></div></td>
+        <td><div align="center"><a href="#menu" class="hover-sombra">MENU</a></div></td>
+        <td><div align="center"><a href="#promo" class="hover-sombra">PROMOCIONES</a></div></td>
+        <td><div align="center"><a href="#contacto" class="hover-sombra">UBICACIÓN Y CONTACTO</a></div></td>
         <td><div align="left"><a href="https://www.instagram.com/dqmexico/?hl=es"><img src="INSTAGRAM LOGO.jpg" height="80"></a></div></td>
         <td><div align="right"><a href="https://www.facebook.com/dqmexico/?locale=es_LA"><img src="FACEBOOK LOGO.png" height="80"></a></div></td>
       </tr>
     </table>
   </div>
 </div>
-<div class="NICTEB"></div>
-<div class="NICTEC">
+<div id="inicio" class="NICTEB"></div>
+<div id="promo" class="NICTEC">
   <div align="center">
     <table width="80%" border="0">
       <tr>
@@ -120,7 +134,7 @@ body {
     </table>
   </div>
 </div>
-<div class="NICTEE">
+<div id="menu"class="NICTEE">
   <div align="center">
     <table width="80%" border="0">
       <tr>
@@ -158,7 +172,7 @@ body {
 </div>
 
 
-<div class="NICTED">
+<div id="noticias" class="NICTED">
   <div align="center">
     <table width="80%" border="0">
       <tr>
@@ -175,7 +189,7 @@ body {
     </table>
   </div>
 </div>
-<div class="NICTEF">
+<div id="contacto"class="NICTEF">
   <div align="center">
     <table width="80%" border="0">
       <tr>
